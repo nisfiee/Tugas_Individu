@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+void main()
+{
+
+int detik, menit, jam, mnt_dtk, jam_dtk, detik_total, dtk_mnt, jam_mnt, biaya_total;
+
+
+cout<<"\t \t Konversi Dan Menghitung Biaya Telepon" <<endl;
+cout<<" Lama Waktu Telepon" <<endl;
+cout<< " Detik \t= ";
+cin>> detik;
+cout<< "\n Menit \t= ";
+cin>> menit;
+cout<< "\n Jam \t= ";
+cin>> jam;
+
+mnt_dtk  = menit *60;
+jam_dtk = jam*3600;
+detik_total = detik + mnt_dtk + jam_dtk;
+
+cout<< "Total Detik = " << detik_total <<endl;
+
+
+
+//mencari biaya
+dtk_mnt = detik/60;
+jam_mnt = jam_dtk/60;
+biaya_total = (mnt_dtk + dtk_mnt + jam_mnt) * 150;
+
+cout<< "Biaya Telepon Anda adalah" << biaya_total <<endl <<endl;
+
+}
