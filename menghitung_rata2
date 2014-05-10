@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	float uts, uas, tgs, rata2;
+
+	cout<< "\t \t \t MENCARI NILAI RATA - RATA" <<endl <<endl;
+	cout<< " Masukkan Nilai UTS \t= ";
+
+	cin>> uts;
+	cout<< "\n Masukkan Nilai UAS \t= ";
+	cin>> uas;
+	cout<< "\n Masukkan Nilai Tugas \t= ";
+	cin>> tgs;
+
+rata2 = (0.2*tgs) + (0.4*uts) + (0.4*uas);
+
+cout<< "\n -----------------------------------";
+cout<< "\n Nilai Rata Rata \t= " <<rata2 <<endl <<endl <<endl;	
+
+}
