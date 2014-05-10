@@ -1,0 +1,70 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void main()
+{
+
+	int i= 1, pilih, bu=0, so=0, pa=0, n;
+	
+	cout<< "Berapa jumlah anggota HIMTI? ";
+	cin>> n;
+	cout<<endl;
+
+	cout<<"--------------------------------";
+
+	
+	cout<<" ---Kandidat Ketua Himti---" <<endl;
+	cout<<" 1. BU (Budiman dan Usman)" <<endl;
+	cout<<" 2. SO (Somad dan Ojan)" <<endl;
+	cout<<" 3. PA (Paijo dan Abdul)" <<endl;
+
+	do
+	{		
+		cout<<" Masukkan pilihan sesuai nurani Anda = ";
+		cin>>pilih;
+		i++;
+	
+		if(pilih==1)
+		{
+			bu=bu+1;
+		}
+		else if(pilih==2)
+		{
+			so=so+1;
+		}
+		else if(pilih==3)
+		{
+			pa=pa+1;
+		}
+	}
+	while(i<=n);
+
+	if((bu>so)&&(bu>pa))
+	{
+		cout<<" Pemenangnya adalah kandidat nomor 1";
+	}
+
+	else if((so>bu)&&(so>pa))
+	{
+		cout<<" Pemenangnya adalah kandidat nomor 2";
+	}
+	else if((pa>bu)&&(pa>so))
+	{
+		cout<" Pemenangnya adalah kandidat nomor 3";
+	}
+	else 
+	{
+		cout<<" Pemenangnya seri" <<endl;
+	}
+
+
+
+
+}
+
+
+
+
+
+
